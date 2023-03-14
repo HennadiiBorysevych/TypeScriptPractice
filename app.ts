@@ -1,13 +1,14 @@
-const btn = document.querySelector('#btn')! as HTMLButtonElement;
-console.log("🚀 ~ file: app.ts:2 ~ btn:", btn);
+const btn = document.querySelector('#btn')!;
+console.log(btn);
 const numberOne = document.querySelector('#value1')! as HTMLInputElement;
+console.log("🚀 ~ file: app.ts:4 ~ numberOne:", numberOne)
 const numberTwo = document.querySelector('#value2')! as HTMLInputElement;
 
 function add(value1: number, value2: number) {
     return value1 + value2;
 }
 btn.addEventListener('click', () => {
-    console.log(add(+numberOne, +numberTwo));
+    console.log(add(+numberOne.value, +numberTwo.value));
 })
 function showMessage(message: string) {
     console.log(message);

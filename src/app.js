@@ -1,13 +1,14 @@
 "use strict";
 const btn = document.querySelector('#btn');
-console.log("🚀 ~ file: app.ts:2 ~ btn:", btn);
+console.log(btn);
 const numberOne = document.querySelector('#value1');
+console.log("🚀 ~ file: app.ts:4 ~ numberOne:", numberOne);
 const numberTwo = document.querySelector('#value2');
 function add(value1, value2) {
     return value1 + value2;
 }
 btn.addEventListener('click', () => {
-    console.log(add(+numberOne, +numberTwo));
+    console.log(add(+numberOne.value, +numberTwo.value));
 });
 function showMessage(message) {
     console.log(message);
